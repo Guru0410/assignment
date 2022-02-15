@@ -2,6 +2,8 @@
 The project can be deployed using following script:
 **./startDeployment.sh**
 
+This script will also start the Watcher.py script and will listen for changes in the event.log and update the throughput.csv file.
+
 The above script will build a docker image and deploy containers for target and splitter. Agent can be triggered using following command:
 **docker run -v IMAGE --add-host splitter:172.17.0.3 cribl node app.js agent**
 
